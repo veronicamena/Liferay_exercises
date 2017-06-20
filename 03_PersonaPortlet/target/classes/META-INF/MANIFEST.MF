@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: portlets
+Built-By: USUARIO
+Bnd-LastModified: 1486989634935
+Bundle-ManifestVersion: 2
+Import-Package: com.liferay.portal.kernel.annotation;version="[6.3,7)"
+ ,com.liferay.portal.kernel.dao.orm;version="[7.0,8)",com.liferay.port
+ al.kernel.exception;version="[7.0,8)",com.liferay.portal.kernel.model
+ ;version="[1.0,2)",com.liferay.portal.kernel.portlet.bridges.mvc;vers
+ ion="[1.0,2)",com.liferay.portal.kernel.service;version="[1.0,2)",com
+ .liferay.portal.kernel.util;version="[7.0,8)",javax.portlet;version="
+ [2.0,3)",javax.servlet;version="[3.0,4)",javax.servlet.http;version="
+ [3.0,4)",serviciopersonas.model;version="[1.0,2)",serviciopersonas.se
+ rvice;version="[1.0,2)"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=jsp.taglib
+ )(uri=http://java.sun.com/portlet_2_0))",osgi.extender;filter:="(&(os
+ gi.extender=jsp.taglib)(uri=http://liferay.com/tld/aui))",osgi.extend
+ er;filter:="(&(osgi.extender=jsp.taglib)(uri=http://liferay.com/tld/p
+ ortlet))",osgi.extender;filter:="(&(osgi.extender=jsp.taglib)(uri=htt
+ p://liferay.com/tld/theme))",osgi.extender;filter:="(&(osgi.extender=
+ jsp.taglib)(uri=http://liferay.com/tld/ui))",osgi.ee;filter:="(&(osgi
+ .ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/portlets.PersonaPortlet.xml
+Tool: Bnd-3.2.0.201605172007
+Provide-Capability: osgi.service;objectClass:List<String>="javax.portl
+ et.Portlet",liferay.resource.bundle;bundle.symbolic.name=portlets;res
+ ource.bundle.base.name="content.Language"
+Bundle-Name: 03_PersonaPortlet
+Bundle-Version: 1.0.0.201702131240
+Private-Package: content,portlets
+Build-Jdk: 1.8.0_111
+Created-By: 1.8.0_111 (Oracle Corporation)
+
